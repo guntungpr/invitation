@@ -1,13 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class FirstPage extends StatefulWidget {
+class InformationPage extends StatefulWidget {
   @override
-  _FirstPageState createState() => _FirstPageState();
+  _InformationPageState createState() => _InformationPageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _InformationPageState extends State<InformationPage> {
   bool animated = false;
   double opacity = 0;
 
@@ -36,7 +35,7 @@ class _FirstPageState extends State<FirstPage> {
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage("src/img/background1.jpg"), fit: BoxFit.cover,),
+                image: DecorationImage(image: AssetImage("src/img/background3.jpg"), fit: BoxFit.cover,),
               ),
             ),
             Center(
@@ -55,7 +54,7 @@ class _FirstPageState extends State<FirstPage> {
                         ),
                         SizedBox(height: 30),
                         Text("Annisa Apriliani, S.Kes", style: TextStyle(fontSize: 30)),
-                        Text("Anak perempuan dari ", style: TextStyle(fontSize: 16)),
+                        Text("Anak ke - 2 dari ", style: TextStyle(fontSize: 16)),
                         Text("Setiawan Budi & Ira Permatasari ", style: TextStyle(fontSize: 16)),
                         SizedBox(height: 50),
                         Text("&", style: TextStyle(fontSize: 50)),
@@ -83,8 +82,9 @@ class _FirstPageState extends State<FirstPage> {
                         ),
                         SizedBox(height: 30),
                         Text("Budi Setiawan, S.Ss", style: TextStyle(fontSize: 30)),
-                        Text("Anak laki-laki dari ", style: TextStyle(fontSize: 16)),
+                        Text("Anak ke - 1 dari ", style: TextStyle(fontSize: 16)),
                         Text("Setiawan Budi & Ira Permatasari ", style: TextStyle(fontSize: 16)),
+                        SizedBox(height: 30),
                       ],
                     ),
                   ),

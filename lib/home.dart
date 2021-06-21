@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Container(
                 decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage("src/img/prewed_2.jpg"), fit: BoxFit.cover,),
+                  image: DecorationImage(image: AssetImage("src/img/home.webp"), fit: BoxFit.cover,),
                 ),
               ),
               Center(
@@ -31,12 +31,21 @@ class _HomePageState extends State<HomePage> {
                       'Annisa & Budi',
                       style: TextStyle(color: Colors.white, fontSize: 36),
                     ),
-                    SizedBox(height: 50),
+                    SizedBox(height: 100),
                     Text(
-                      'Silahkan klik tombol dibawah untuk membuka undangan',
-                      style: TextStyle(color: Colors.white, fontSize: 14),
+                      'Kepada Yth.',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
-                    SizedBox(height: 10),
+                    Text(
+                      'Bapak/Ibu/Saudara : ',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      'Rio Sunardi',
+                      style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 30),
                     TextButton(
                         child: Text(
                             "Buka Undangan".toUpperCase(),

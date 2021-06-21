@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class ThirdPage extends StatefulWidget {
+class SchedulePage extends StatefulWidget {
   @override
-  _ThirdPageState createState() => _ThirdPageState();
+  _SchedulePageState createState() => _SchedulePageState();
 }
 
-class _ThirdPageState extends State<ThirdPage> {
+class _SchedulePageState extends State<SchedulePage> {
   double opacity = 0;
 
   @override
@@ -62,7 +62,7 @@ class _ThirdPageState extends State<ThirdPage> {
                                   padding: EdgeInsets.symmetric(horizontal: 30),
                                   child: Divider(color: Colors.black),
                                 ),
-                                Text('Jl. Griyo Mapan Sentosa, Tropodo, Waru, Sidoarjo', style: TextStyle(color: Colors.brown)),
+                                Text('Masjid Agung Surabaya', style: TextStyle(color: Colors.brown)),
                                 Text('09.00 - 11.00 WIB', style: TextStyle(color: Colors.brown)),
                                 SizedBox(height: 100),
                                 Text('Resepsi', textScaleFactor: 2),

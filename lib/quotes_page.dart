@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatefulWidget {
+class QuotesPage extends StatefulWidget {
   @override
-  _SecondPageState createState() => _SecondPageState();
+  _QuotesPageState createState() => _QuotesPageState();
 }
 
-class _SecondPageState extends State<SecondPage> {
+class _QuotesPageState extends State<QuotesPage> {
   double opacity = 0;
 
   @override
@@ -22,6 +22,7 @@ class _SecondPageState extends State<SecondPage> {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     return Theme(
       data: ThemeData(
           fontFamily: "Courgette"
@@ -35,7 +36,7 @@ class _SecondPageState extends State<SecondPage> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: EdgeInsets.symmetric(horizontal: screenSize.width < 730 ? 30 : screenSize.width < 850 ? 100 : 200),
                 child: AnimatedOpacity(
                   opacity: opacity,
                   duration: Duration(seconds: 1),
